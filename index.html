@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WeldBert - Precision Welding & Fabrication</title>
+  <meta name="description" content="High-quality welding, ASME vessels, and process piping fabrication. Request a quote today!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Quote form theme styling */
+    .quote-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      background: #f7f9fb;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+      border: 1px solid #e3e8f0;
+    }
+    .quote-form input,
+    .quote-form textarea {
+      font-family: 'Open Sans', 'Work Sans', Arial, sans-serif;
+      font-size: 1.08rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid #23408e;
+      background: #fff;
+      color: #222;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      box-shadow: 0 1px 4px rgba(35,64,142,0.04);
+    }
+    .quote-form input:focus,
+    .quote-form textarea:focus {
+      border-color: #ffb400;
+      box-shadow: 0 0 0 2px #ffb40033;
+    }
+    .quote-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .quote-form button[type="submit"] {
+      background: #23408e;
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.8rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      align-self: flex-end;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    .quote-form button[type="submit"]:hover {
+      background: #ffb400;
+      color: #23408e;
+    }
+    @media (max-width: 600px) {
+      .quote-form {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        border-radius: 0;
+      }
+      .quote-form input,
+      .quote-form textarea {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+      }
+      .quote-form button[type="submit"] {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="#" class="site-logo"><img src="https://weweld.com/wp-content/uploads/logo-1.png" alt="WeldBert Logo"></a>
+      <div class="header-contacts">
+        <div class="container" style="position:relative;display:flex;align-items:center;gap:0.5rem;">
+        </div>
+        <button class="hamburger" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-justify-icon lucide-align-justify"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg>
+        </button>
+        <a href="mailto:info@weldbert.com"><i class="fa fa-envelope"></i><span class="mail">info@weldbert.com</span></a>
+        <span><i class="fa fa-phone"></i> <span class="phone">877-252-0152</span></span>
+        <span class="phone"><i class="fa fa-phone"></i> 281-252-0151</span>
+        <a href="#quote" class="btn"><span class="lg">Request a Quote</span><span class="mob">RFQ</span></a>
+      </div>
+    </div>
+    <nav>
+      <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <button class="close-menu-btn" id="close-menu-btn" aria-label="Close navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+        <ul class="main-menu" id="main-menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Your Premier Welding and Fabrication Company</h1>
+    <h2>Established 1983</h2>
+    <div class="cta-btns">
+      <a href="#services" class="btn">Our Services</a>
+      <a href="#quote" class="btn secondary">Request a Quote</a>
+    </div>
+  </section>
+  <main>
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <a href="welding.html"><img src="https://weweld.com/wp-content/uploads/welding.webp" alt="Welding and Fabrication"></a>
+          <h3>Welding and Fabrication</h3>
+          <p>Custom metalwork tailored to industrial and commercial needs.</p>
+          <a href="welding.html" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <img src="https://weweld.com/wp-content/uploads/ASME-Vessels.jpg" alt="ASME Vessels">
+          <h3>ASME Vessels</h3>
+          <p>Fabrication of pressure vessels meeting strict ASME codes.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <img src="https://weweld.com/wp-content/uploads/ASME-process-piping.jpg" alt="ASME Process Piping">
+          <h3>ASME Process Piping</h3>
+          <p>Installation of high-performance piping systems for various industries.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <img src="https://weweld.com/wp-content/uploads/AISC-structural-steel.jpg" alt="AISC Structural Steel">
+          <h3>AISC Structural Steel</h3>
+          <p>Production of structural steel components adhering to AISC guidelines.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="service-card">
+          <img src="https://weweld.com/wp-content/uploads/Pipe-spool.jpg" alt="Pipe Spool Fabrication">
+          <h3>Pipe Spool Fabrication</h3>
+          <p>Custom-built pipe spools for faster installation and reduced downtime.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p>WeldBert has built a strong reputation as a trusted welding and fabrication company, delivering high-quality metalwork for industries that demand precision and reliability. With decades of experience, we handle everything from custom fabrication to large-scale structural projects.</p>
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="https://weweld.com/wp-content/uploads/Careers.jpg" alt="Careers">
+          <h3>Careers</h3>
+          <p>Join the WeldBert team!</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-card">
+          <img src="https://weweld.com/wp-content/uploads/History.jpg" alt="History">
+          <h3>History</h3>
+          <p>Read about our founder.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="about-card">
+          <img src="https://weweld.com/wp-content/uploads/Testimonials.jpg" alt="Testimonials">
+          <h3>Testimonials</h3>
+          <p>Hear from current customers.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="facilities">
+      <h2>Our Facilities</h2>
+      <div class="locations">
+        <div class="location-card">
+          <img src="https://weweld.com/wp-content/uploads/Facility1.jpg" alt="Main Facility">
+          <div class="location-info">
+            <h4>Main Facility</h4>
+            <p>10002 SWEETWATER HOUSTON, TX 77037<br>Clean room for stainless steel and reactive metal fabrication.</p>
+          </div>
+        </div>
+        <div class="location-card">
+          <img src="https://weweld.com/wp-content/uploads/Facility2.jpg" alt="Midland Facility">
+          <div class="location-info">
+            <h4>Midland Facility</h4>
+            <p>407 MIDLAND HOUSTON, TX 77037<br>Process piping, structural, and miscellaneous steel fabrication.</p>
+          </div>
+        </div>
+        <div class="location-card">
+          <img src="https://weweld.com/wp-content/uploads/Facility3.jpg" alt="Northville Facility">
+          <div class="location-info">
+            <h4>Northville Facility</h4>
+            <p>408 NORTHVILLE HOUSTON, TX 77037<br>Process piping, structural, and miscellaneous steel fabrication.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="resources">
+      <h2>Resources</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <img src="https://weweld.com/wp-content/uploads/gallery-icon.svg" alt="Gallery">
+          <h3>Gallery</h3>
+          <p>See our past projects.</p>
+          <a href="#" class="btn">View Gallery</a>
+        </div>
+        <div class="about-card">
+          <img src="https://weweld.com/wp-content/uploads/safety-icon.svg" alt="Safety">
+          <h3>Safety</h3>
+          <p>Learn about our safety standards.</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="quote">
+      <h2>Request a Quote</h2>
+      <form class="quote-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Project Details" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>For high-quality welding and fabrication services, reach out to WeldBert today. Whether you need ASME vessels, pipe spool fabrication, or structural steel components, our team is ready to assist.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@weldbert.com">info@weldbert.com</a> &nbsp; <strong>Phone:</strong> 877-252-0152 / 281-252-0151</p>
+      <p><strong>Address:</strong> 94 Tombia Extension G.R.A phase 2 port Harcourt.</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#facilities">Facilities</a>
+      <a href="#about">About</a>
+      <a href="#resources">Resources</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div style="margin: 1rem 0;">
+      <img src="https://weweld.com/wp-content/uploads/logo-1.png" alt="WeldBert Logo" style="height: 40px; vertical-align: middle;">
+      <span style="margin-left: 1rem; font-weight: 700;">WeldBert</span>
+    </div>
+    <div style="margin: 1rem 0;">
+      <img src="https://weweld.com/wp-content/uploads/aisc.png" alt="AISC" style="height: 32px; margin: 0 0.5rem;">
+      <img src="https://weweld.com/wp-content/uploads/acme-logo.png" alt="ACME" style="height: 32px; margin: 0 0.5rem;">
+      <img src="https://weweld.com/wp-content/uploads/american-welding-society.png" alt="AWS" style="height: 32px; margin: 0 0.5rem;">
+    </div>
+    <div style="margin-top: 1rem; font-size: 0.95rem;">
+      &copy; 2025 WeldBert, All Rights Reserved
+    </div>
+  </footer>
+</body>
+<script>
+// Hamburger and mobile menu logic
+const hamburger = document.getElementById('hamburger-menu');
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+const closeMenuBtn = document.getElementById('close-menu-btn');
+const menu = document.getElementById('main-menu');
+
+function updateMenuDisplay() {
+  if (window.innerWidth <= 900) {
+    hamburger.style.display = 'flex';
+    mobileMenuOverlay.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  } else {
+    hamburger.style.display = 'none';
+    mobileMenuOverlay.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+}
+
+window.addEventListener('resize', updateMenuDisplay);
+window.addEventListener('DOMContentLoaded', updateMenuDisplay);
+
+hamburger.addEventListener('click', function() {
+  mobileMenuOverlay.classList.add('open');
+  hamburger.style.display = 'none';
+  hamburger.setAttribute('aria-expanded', 'true');
+});
+
+closeMenuBtn.addEventListener('click', function() {
+  mobileMenuOverlay.classList.remove('open');
+  hamburger.style.display = 'flex';
+  hamburger.setAttribute('aria-expanded', 'false');
+});
+
+// Close menu when clicking a link (on mobile)
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 900) {
+      mobileMenuOverlay.classList.remove('open');
+      hamburger.style.display = 'flex';
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+</script>
+</html>

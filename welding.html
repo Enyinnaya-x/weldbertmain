@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Welding and Fabrication | WeldBert</title>
+  <meta name="description" content="Precision welding and fabrication services for structural steel, ASME vessels, and more. Contact WeldBert today!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="weld.css">
+  <style>
+    body {
+      font-family: 'Open Sans', 'Work Sans', Arial, sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #222;
+      overflow-x: hidden;
+    }
+    .site-header {
+      background: #23408e;
+      color: #fff;
+      padding: 1.2rem 0 0.7rem 0;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.2rem;
+    }
+    .site-logo img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    .header-contacts {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .header-contacts a,
+    .header-contacts span {
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .btn {
+      background: #ffb400;
+      color: #23408e;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.6rem 1.6rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      margin-left: 0.5rem;
+    }
+    .btn:hover {
+      background: #23408e;
+      color: #fff;
+    }
+    .hero {
+      background: #e3e8f0;
+      padding: 2.5rem 0 1.5rem 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #23408e;
+      margin-bottom: 0.5rem;
+    }
+    .hero h2 {
+      font-size: 1.3rem;
+      color: #ffb400;
+      margin-bottom: 1.2rem;
+    }
+    .cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    main {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      margin: 2rem auto;
+      max-width: 1100px;
+      padding: 2rem 1.2rem;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h2 {
+      color: #23408e;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .section ul {
+      padding-left: 1.5em;
+      margin-bottom: 1.2em;
+    }
+    .section ul li {
+      margin-bottom: 0.5em;
+      position: relative;
+      font-size: 1rem;
+    }
+    .section ul li:before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      display: inline-block;
+      background: #23408e;
+      border-radius: 50%;
+      margin-right: 0.7em;
+      vertical-align: middle;
+    }
+    .section img.alignright {
+      float: right;
+      margin: 0 0 1em 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      max-width: 395px;
+      height: auto;
+    }
+    .quote-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      background: #f7f9fb;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      padding: 2rem 1.5rem 1.5rem 1.5rem;
+      border: 1px solid #e3e8f0;
+    }
+    .quote-form input,
+    .quote-form textarea {
+      font-family: 'Open Sans', 'Work Sans', Arial, sans-serif;
+      font-size: 1.08rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid #23408e;
+      background: #fff;
+      color: #222;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      box-shadow: 0 1px 4px rgba(35,64,142,0.04);
+    }
+    .quote-form input:focus,
+    .quote-form textarea:focus {
+      border-color: #ffb400;
+      box-shadow: 0 0 0 2px #ffb40033;
+    }
+    .quote-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .quote-form button[type="submit"] {
+      background: #23408e;
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.8rem 2.2rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      align-self: flex-end;
+      box-shadow: 0 2px 8px rgba(35,64,142,0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    .quote-form button[type="submit"]:hover {
+      background: #ffb400;
+      color: #23408e;
+    }
+    @media (max-width: 900px) {
+      .container, main {
+        max-width: 100%;
+        padding: 0 0.5rem;
+      }
+      .site-logo img {
+        height: 40px;
+      }
+      main {
+        margin: 1rem auto;
+        padding: 1rem 0.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .quote-form {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        border-radius: 0;
+      }
+      .quote-form input,
+      .quote-form textarea {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+      }
+      .quote-form button[type="submit"] {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-flex">
+        <a href="index.html" class="site-logo"><img src="https://weweld.com/wp-content/uploads/logo-1.png"
+                alt="WeldBert Logo"></a>
+        <div class="header-contacts">
+            <div class="container" style="position:relative;display:flex;align-items:center;gap:0.5rem;">
+            </div>
+            <button class="hamburger" id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-align-justify-icon lucide-align-justify">
+                    <path d="M3 12h18" />
+                    <path d="M3 18h18" />
+                    <path d="M3 6h18" />
+                </svg>
+            </button>
+            <a href="mailto:info@weldbert.com"><i class="fa fa-envelope"></i><span
+                    class="mail">info@weldbert.com</span></a>
+            <span><i class="fa fa-phone"></i> <span class="phone">877-252-0152</span></span>
+            <span class="phone"><i class="fa fa-phone"></i> 281-252-0151</span>
+            <a href="#quote" class="btn"><span class="lg">Request a Quote</span><span class="mob" style="display: none;">RFQ</span></a>
+        </div>
+    </div>
+    <nav>
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+            <div class="mobile-menu-header">
+                <button class="close-menu-btn" id="close-menu-btn" aria-label="Close navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x-icon lucide-x">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="main-menu" id="main-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+  <section class="hero">
+    <div class="container">
+      <h1>Welding and Fabrication</h1>
+      <h2>Quality precision welding and fabrication services for all industries</h2>
+    </div>
+  </section>
+  <main>
+    <section class="section">
+      <img src="https://weweld.com/wp-content/uploads/MVC-042S-500x375.jpg" alt="Welding" class="alignright">
+      <p>Quality precision welding and fabrication services are essential to almost any industry that depends on custom metal parts. Accurately creating a functioning component from a part design often involves joining multiple metal pieces together. This may require extensive precision welding and fabrication processes, either before or after welding.</p>
+      <p>At WeldBert, we specialize in comprehensive welding and fabrication services for a wide range of steel applications. Our expertise includes working with structural steel, piping, and miscellaneous steel. Efficient precision welding and fabrication processes are necessary for accurate and reliable metal manufacturing. The quality of fabrication and welding plays an essential role in ensuring numerous global industries have the metal parts needed to consistently satisfy market demand.</p>
+    </section>
+    <section class="section">
+      <h2>Overview of Welding and Fabrication</h2>
+      <p>Designing and producing metal structures begins with highly skilled welding and fabrication services. Precision welding and fabrication go hand in hand. However, fabrication and welding are also fully distinct processes. Fabrication involves numerous subspecialties, including the following:</p>
+      <ul>
+        <li>Oxy/Acetylene Waterjet and Plasma</li>
+        <li>Plate Bending & Shearing</li>
+        <li>MIG (GMAW), TIG (GTAW), Flux Core (GMAW), Sub-Merge Arc (SAW), Stick (SMAW)</li>
+        <li>Hole Punching</li>
+        <li>Plate Rolling</li>
+      </ul>
+      <p>Welding is a type of joining process for combining metal pieces. It achieves a permanent bond, most often by applying a concentrated blast of heat and pressure to melt a filler-metal compound. The filler-metal quickly conforms to the adjoining metal pieces, fastening them together.</p>
+      <p>High-quality welds require pre-fabrication to ensure the connecting pieces have suitable mating surfaces for a lasting weld. There are also numerous types of welding processes, each with its own advantages and applications. Different types of welding methods are more suitable for particular metals or joining techniques.</p>
+    </section>
+    <section class="section">
+      <h2>Industries & Applications of Welding and Fabrication</h2>
+      <p>Together, custom precision welding and fabrication services provide reliable metal components for numerous industries, including the following:</p>
+      <ul>
+        <li>Construction</li>
+        <li>Aerospace</li>
+        <li>Pharmaceutical</li>
+        <li>Sub-sea</li>
+        <li>Food processing</li>
+        <li>Oil and Gas</li>
+        <li>Natural Gas Pipeline Equipment</li>
+        <li>Shipbuilding</li>
+        <li>Manufacturing</li>
+        <li>Flares</li>
+      </ul>
+      <p>These industries and more depend on custom metal parts meeting stringent tolerance windows and other industry standards. Proper metal fabrication techniques require extensive planning and careful selection from a variety of precision welding and fabricating methods to achieve the manufacturer’s exact design standards.</p>
+    </section>
+    <section class="section">
+      <h2>Welding and Fabrication Product/Service Capabilities</h2>
+      <p>With an effective and flexible management team and a process-oriented approach, we deliver high-efficiency precision welding and fabrication processes that can easily replicate high quantities of standard or custom parts. Depending on the exact technologies and techniques, our metal fabrication and welding specialists can achieve highly consistent part uniformity or match fully custom designs with respect to exact dimensions and other design standards. To ensure that our customers receive their parts when they need them, we have established long-term relationships with third-party service providers, including galvanizers, coating and painting contractors, and material vendors.</p>
+      <p>Depending on the application, we can use a wide range of raw materials, specifically different steel and various alloys. At WeldBert, our experience allows us to provide working prototypes before you commit to full production runs.</p>
+      <p>We also maintain full production run capacities, allowing us to rapidly carry an initial design to completion, with a finished, assembly-ready component with the option of expedited delivery. However sophisticated your metal fabrication and welding services must be, the greater your metal fabrication partner’s skills and experience must also be.</p>
+    </section>
+    <section class="section">
+      <h2>Welding and Fabrication Services From WeldBert</h2>
+      <p>WeldBert has served as Texas’ premier welding and fabrication shop, providing high-quality, reliable service for over 40 years. With American Welding Society certifications in the structural steel and welding industries, we meet and exceed some of the tightest regulatory standards of our trade. If you’d like to learn more about our capabilities, <a href="#contact">Contact us</a> or <a href="#quote">request a quote</a> on any of our in-house precision welding and fabrication services.</p>
+    </section>
+    <section class="section" id="quote">
+      <h2>Request a Quote</h2>
+      <form class="quote-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Project Details" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p>For high-quality welding and fabrication services, reach out to WeldBert today. Whether you need ASME vessels, pipe spool fabrication, or structural steel components, our team is ready to assist.</p>
+      <p><strong>Email:</strong> <a href="mailto:info@weldbert.com">info@weldbert.com</a> &nbsp; <strong>Phone:</strong> 877-252-0152 / 281-252-0151</p>
+      <p><strong>Address:</strong> 94 Tombia Extension G.R.A phase 2 port Harcourt.</p>
+    </section>
+  </main>
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#about">About</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div style="margin: 1rem 0;">
+            <img src="https://weweld.com/wp-content/uploads/logo-1.png" alt="WeldBert Logo"
+                style="height: 40px; vertical-align: middle;">
+            <span style="margin-left: 1rem; font-weight: 700;">WeldBert</span>
+        </div>
+        <div style="margin: 1rem 0;">
+            <img src="https://weweld.com/wp-content/uploads/aisc.png" alt="AISC" style="height: 32px; margin: 0 0.5rem;">
+            <img src="https://weweld.com/wp-content/uploads/acme-logo.png" alt="ACME"
+                style="height: 32px; margin: 0 0.5rem;">
+            <img src="https://weweld.com/wp-content/uploads/american-welding-society.png" alt="AWS"
+                style="height: 32px; margin: 0 0.5rem;">
+        </div>
+        <div style="margin-top: 1rem; font-size: 0.95rem;">
+            &copy; 2025 WeldBert, All Rights Reserved
+        </div>
+    </footer>
+    </body>
+    <script>
+// Hamburger and mobile menu logic
+const hamburger = document.getElementById('hamburger-menu');
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+const closeMenuBtn = document.getElementById('close-menu-btn');
+const menu = document.getElementById('main-menu');
+
+function updateMenuDisplay() {
+  if (window.innerWidth <= 900) {
+    hamburger.style.display = 'flex';
+    mobileMenuOverlay.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  } else {
+    hamburger.style.display = 'none';
+    mobileMenuOverlay.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
+}
+
+window.addEventListener('resize', updateMenuDisplay);
+window.addEventListener('DOMContentLoaded', updateMenuDisplay);
+
+hamburger.addEventListener('click', function() {
+  mobileMenuOverlay.classList.add('open');
+  hamburger.style.display = 'none';
+  hamburger.setAttribute('aria-expanded', 'true');
+});
+
+closeMenuBtn.addEventListener('click', function() {
+  mobileMenuOverlay.classList.remove('open');
+  hamburger.style.display = 'flex';
+  hamburger.setAttribute('aria-expanded', 'false');
+});
+
+// Close menu when clicking a link (on mobile)
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 900) {
+      mobileMenuOverlay.classList.remove('open');
+      hamburger.style.display = 'flex';
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+    </script>
+    
+    </html>
