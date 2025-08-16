@@ -446,58 +446,6 @@ nav {
     background: #ffb400;
     color: #222;
 }
-
-.locations {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.location-card {
-    background: #f7f9fb;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    width: 320px;
-    min-width: 0;
-    text-align: left;
-    padding: 1.5rem 1rem 1rem 1rem;
-    transition: box-shadow 0.2s;
-    position: relative;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.location-card img {
-    width: 100px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
-    min-width: 0;
-}
-
-.location-info {
-    flex: 1;
-}
-
-.location-info h4 {
-    margin: 0 0 0.5rem 0;
-    color: #23408e;
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.location-info p {
-    margin: 0;
-    font-size: 1rem;
-    color: #444;
-}
-
 .footer {
     background: #23408e;
     color: #fff;
